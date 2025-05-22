@@ -12,7 +12,7 @@ $(document).ready(function() {
         });
         $("#glow").remove();
         txt1.hide().html("Semoga aja bisa terkabul ya nabb...").delay(750).fadeIn(300);
-        txt2.hide().html("Semoga aja bisa terkabul ya nabb...").delay(750).fadeIn(300);
+        txt2.fadeOut(300);
         $("#candle").animate(
             {
             opacity: ".5"
