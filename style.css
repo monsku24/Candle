@@ -4,21 +4,42 @@ body {
   }
   
   h1 {
-    position: fixed;
-    margin: 0 auto;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    width: 12em;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 100;
-    font-family: "Sacramento";
-    letter-spacing: 0.1em;
-    color: white;
-    text-shadow: 0 0 20px black;
-    opacity: 0.8;
-  }
+  position: fixed;
+  margin: 0 auto;
+  bottom: 8%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  font-family: "Sacramento", cursive;
+  letter-spacing: 0.1em;
+  color: white;
+  text-shadow: 0 0 20px black;
+  opacity: 0.8;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+h2 {
+  position: fixed;
+  margin: 0 auto;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 100;
+  font-family: "Sacramento", cursive;
+  letter-spacing: 0.1em;
+  color: white;
+  text-shadow: 0 0 20px black;
+  opacity: 0.8;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
   
   #glow {
     position: absolute;
