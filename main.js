@@ -1,25 +1,25 @@
 $(document).ready(function() {
     $(function () {
-    var flame = $("#flame");
-    var txt1 = $("h1");
-    var txt2 = $("h2");
+        var flame = $("#flame");
+        var txt1 = $("h1");
+        var txt2 = $("h2");
 
-    flame.on({
-        click: function () {
-        flame.removeClass("burn").addClass("puff");
-        $(".smoke").each(function () {
-            $(this).addClass("puff-bubble");
+        flame.on({
+            click: function () {
+                flame.removeClass("burn").addClass("puff");
+                $(".smoke").each(function () {
+                    $(this).addClass("puff-bubble");
+                });
+                $("#glow").remove();
+                txt1.hide().html("Semoga aja bisa terkabul ya nabb...").delay(750).fadeIn(300);
+                txt2.fadeOut(300); // Menghapus h2 dengan efek fade out
+                $("#candle").animate(
+                    {
+                        opacity: ".5"
+                    },
+                    100
+                );
+            }
         });
-        $("#glow").remove();
-        txt1.hide().html("Semoga aja bisa terkabul ya nabb...").delay(750).fadeIn(300);
-        txt2.fadeOut(300);
-        $("#candle").animate(
-            {
-            opacity: ".5"
-            },
-            100
-        );
-        }
     });
-});});
-
+});
